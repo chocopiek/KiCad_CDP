@@ -11,8 +11,6 @@ git pull origin main
 quy trình push đúng 
 
 git pull origin main
-# mở KiCad, chỉnh sửa
-# đóng KiCad
 git add .
 git commit -m "[SCH] Update power schematic"
 git push origin main
