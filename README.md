@@ -1,52 +1,18 @@
-❗ ĐỌC KỸ – VI PHẠM LÀ HỎNG PROJECT
-❌ Không 2 người cùng sửa 1 file
-Đặc biệt: *.kicad_pcb
-❌ Không commit khi đang mở KiCad
-✅ Mỗi người làm trên branch riêng
-✅ Trước khi làm gì → luôn git pull
+bước 1:
+git clone https://github.com/chocopiek/KiCad_CDP.git
+cd KiCad_CDP
 
-**CÀI ĐẶT (LÀM 1 LẦN)**
+bước 2:
+git checkout main
 
-Cài Git https://git-scm.com
-
-Mở Git Bash (chuột phải vào file rồi chạy cmd ở file đó)
-
-Set tên và email:
-git config --global user.name "Ten Cua Ban"
-git config --global user.email "email@gmail.com"
-
-**LẦN ĐẦU THAM GIA PROJECT**
-**Bước 1:** Clone project về máy
-git clone https://github.com/USERNAME/CDP-Final.git
-cd CDP-Final
-**Bước 2:** Tạo branch RIÊNG cho mình
-git checkout -b tenban-schematic
-(thay tenban thành tên m)
-
-4. QUY TRÌNH LÀM VIỆC MỖI NGÀY (RẤT QUAN TRỌNG)
-Bước 1: Cập nhật code mới nhất
+bước 3: 
 git pull origin main
 
-Bước 2: Mở KiCad và chỉnh sửa phần của mình
-Chỉ sửa file được phân công
-Không đụng file người khác
+quy trình push đúng 
 
-Bước 3: Kiểm tra file đã thay đổi
-git status
-
-Bước 4: Thêm file vào commit
+git pull origin main
+# mở KiCad, chỉnh sửa
+# đóng KiCad
 git add .
-**(đụ má nhớ tắt KiCad nha mấy cha)**
-(commit rõ ràg đã sửa những gì)
-
-Bước 5: Push lên GitHub
-git push origin tenban-schematic
-
-MERGE VÀO MAIN (KHÔNG TỰ Ý)
-❌ KHÔNG ai tự merge vào main
-
-Cách đúng:
-Lên GitHub
-Tạo Pull Request
-Leader review
-Leader merge
+git commit -m "[SCH] Update power schematic"
+git push origin main
