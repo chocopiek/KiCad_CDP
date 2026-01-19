@@ -885,6 +885,10 @@
 			(embedded_fonts no)
 		)
 	)
+	(no_connect
+		(at 78.74 123.19)
+		(uuid "7341d1ec-ccfe-4eae-9481-08b83d075bef")
+	)
 	(symbol
 		(lib_id "Connector:Conn_01x19_Socket")
 		(at 60.96 127 180)
